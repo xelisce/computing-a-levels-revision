@@ -18,8 +18,9 @@ All skills needed in full_server.py and full_client.py, and exercises with guide
 - Transmitting and receiving data both ways  
   
 REMEMBER the server always needs to run before the client
-## 4. Web
-This section is for project based code, and comprises Flask, Jinja, HTML, etc in two different implementations:  
+## 4. Web and databases
+This section is for project based code, and comprises Flask, Jinja, HTML, CSS in three different implementations: 
+- Without database 
 - SQL
 - NoSQL  
 Syllabus states:  
