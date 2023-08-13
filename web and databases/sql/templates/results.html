@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>{{ location }}</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Price</td>
+        </tr>
+        {% for product in data %}
+        <tr>
+            {% for characteristic in product %}
+            <td>
+                {{ characteristic }}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

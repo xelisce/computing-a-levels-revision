@@ -41,6 +41,7 @@ e.g. opening files, or how to use the other built-in modules
 - [ ] Search for BST 
 - [ ] Uploading and receiving files
 - [ ] Upload request.args, request.form, and request.files summary (page 43 of chapter S4D)
+- [ ] More comprehensive sql query examples
 
 # Information on examination
 ## Installed software:
