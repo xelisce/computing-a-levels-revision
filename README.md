@@ -32,10 +32,15 @@ Use HTML, CSS (for clients) and Python (for the server) to create a web applicat
 ## 5. Miscellaneous python skills
 e.g. opening files, or how to use the other built-in modules  
 ## TODO
-- [ ] Web and make individual files as well as revision exercises  
+- [ ] No SQL
+- [ ] SQL
 - [ ] LL static vs dynamic  
-- [ ] Miscellaneous document  
-- [ ] Search for BST  
+- [X] Miscellaneous document 
+- [ ] Handling data in miscellaneous document
+- [ ] CSV library in miscellaneous document
+- [ ] Search for BST 
+- [ ] Uploading and receiving files
+- [ ] Upload request.args, request.form, and request.files summary (page 43 of chapter S4D)
 
 # Information on examination
 ## Installed software:
