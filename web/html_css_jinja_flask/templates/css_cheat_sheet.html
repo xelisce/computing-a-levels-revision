@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS and HTML Styles</title>
+
+    <!--External CSS takes least priority-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Internal CSS takes more priority than external CSS-->
+    <style>
+        h1, h2 {
+            color: blue;
+            font-size: 12px;
+        }
+        h2 { /* adds on to previous */
+            text-align: center;
+            font-family: 'Times New Roman';
+        }
+    </style>
+</head>
+
+<!--Inline CSS takes highest priority-->
+<body style="background-color: yellow;">
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h2 style="color:red;">Header 2 but with inline styling</h2>
+    <h3 style="margin-left: 20px;">Header 3 with margin</h3>
+    <h4>From the stylesheet externally, using rgb values and weight and rounded corners</h4>
+    <h5>From the stylesheet externally, using hsl values and hex value</h5>
+    <h6>From the stylesheet externally, using rgb and hsl with opacity</h6>
+</body>
+
+</html>

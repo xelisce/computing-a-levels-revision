@@ -16,6 +16,7 @@ All skills needed in full_server.py and full_client.py, and exercises with guide
 - Opening and closing sockets
 - Opening multiple client sockets from server side (one at a time)
 - Transmitting and receiving data both ways  
+  
 REMEMBER the server always needs to run before the client
 ## 4. Web
 This section is for project based code, and comprises Flask, Jinja, HTML, etc in two different implementations:  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>After submitting</title>
+    <style>
+        table, th, tr, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Note that for-->
+    <!--logic commands (e.g. if, for, etc.) we use % % enclosed in curly brackets-->
+    <!--and for inserting values we use double curly brackets-->
+
+    <!--values-->
+    <p>Name: {{text}}</p>
+    <p>Password: {{password}}</p>
+
+    <!--functions-->
+    <p>Length of password: {{ password|length }}</p>
+    <p>{{ some_html_code|safe }}</p>
+
+    <!-- logic statements (remember to endif and endfor)-->
+    <table>
+    {% for row in the_list %}
+    <tr>
+        {% for number in row %}
+        <td>
+            {% if number == 2 %}changing 2
+            {% elif number > 10 %}these are more than 10
+            {% else %} {{number}}
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>

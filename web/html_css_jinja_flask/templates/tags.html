@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Page title</title>
+    <style>
+        table, tr, th, td {
+            border: 1px black solid;
+            border-collapse: collapse; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- comments in html 
+    can be multiline as well -->
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4...and this goes all the way down to &lt;h6&gt;</h4>
+    <b>Bold</b>
+    <i>Italics</i>
+    <u>Underlined</u>
+
+    <br>
+    <p>^ That was a line break. They don't need an end tag. This is a paragraph. And here is another line break:</p>
+    <br>
+
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <td>Table header</td>
+            <td>Second cell</td>
+            <td>Third cell</td>
+        </tr>
+        <tr>
+            <td>Or you could use a table row</td>
+            <td>tr stands for table row</td>
+            <td>td stands for table data</td>
+        </tr>
+    </table>
+
+    <h2>Forms and input types</h2>
+    <form action={{ url_for('next_page', additional_string='some_string')}} method="post">
+        <p>You can put inputs in a form. Common types include:</p>
+        <table>
+            <tr>
+                <td><p>Button</p></td>
+                <td><input type="submit" name="input_button" value="Click here to use jinja"></td>
+            </tr>
+            <tr>
+                <td><p>Text</p></td>
+                <td><input type="text" name="input_text"></td>
+            </tr>
+            <tr>
+                <td><p>Password</p></td>
+                <td><input type="password" name="input_password"></td>
+            </tr>
+            <tr>
+                <td><p>File</p></td>
+                <td><input type="file" name="input_file"></td>
+            </tr>
+            <tr>
+                <td><p>(Optional) Number with min and max value</p></td>
+                <td><input type="number" name="input_number" min="0" max="1"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Lists</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <h2>Image and links</h2>
+    <img src={{ url_for('static', filename='download.jpeg')}} alt="this is the alt of image" width="500px" height="500px">
+    <br>
+    <a href="www.google.com">Google it (only works when not accessed through flask)</a>
+    <br>
+    <a href={{ url_for('next_page', additional_string='to_css') }} method="get">Check CSS out</a>
+
+</body>
+
+</html>

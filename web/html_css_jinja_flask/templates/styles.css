@@ -1,0 +1,19 @@
+/* the same thing that goes into internal css can be here */
+
+h4 {
+    color: rgb(80, 50, 156);
+    border: 2px solid violet;
+    border-radius: 5px;
+    margin: 20px, 30px, 10px, 0px; /* top, right, bottom, left (like clock) */
+    font-weight: bold;
+}   
+
+h5 {
+    color: hsl(9, 20, 20);
+    border: 3px dotted #ff6347;
+}
+
+h6 {
+    color: hsla(249, 66%, 40%, 0.7);
+    border: 4px dashed rgba(80, 50, 156, 0.3)
+}
