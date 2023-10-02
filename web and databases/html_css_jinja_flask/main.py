@@ -21,9 +21,13 @@ def next_page(additional_string):
     elif request.method == "POST":
         text = request.form["input_text"]
         password = request.form["input_password"]
+        if "input_file" in request.files:
+            photo = request.files["input_file"]
+        else:
+            photo = ""
         random_numbers = [[1,2,3],[4,5,6],[5,6,7],[8,9,10],[11,12,13]]
         some_html_code = "<h3>Safe code</h3>"
-        return render_template("using_jinja.html", text = text, password = password, the_list = random_numbers, some_html_code=some_html_code)
+        return render_template("using_jinja.html", text = text, password = password, the_list = random_numbers, some_html_code=some_html_code, photo=photo)
 
 # variable urls
 @app.route('/integer/<int:i>')

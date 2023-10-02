@@ -20,7 +20,7 @@
     <p>Length of password: {{ password|length }}</p>
     <p>{{ some_html_code|safe }}</p>
 
-    <!-- logic statements (remember to endif and endfor)-->
+    <!--logic statements (remember to endif and endfor)-->
     <table>
     {% for row in the_list %}
     <tr>
@@ -36,5 +36,13 @@
     {% endfor %}
     </table>
 
+    <!--accessing lists or dictionaries-->
+    {{ the_list[0][0] }}
+
+    <!--accessing photos-->
+    {% if photo != "" %}
+    <img src={{ url_for('get_file', filename=photo) }} alt={{ photo }}>
+    {% endif %}
+    
 </body>
 </html>
